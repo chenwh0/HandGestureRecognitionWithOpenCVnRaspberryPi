@@ -30,11 +30,8 @@ Output:
 ```
 {
     "which_hand": "Left",
-
     "finger_statuses": [0, 1, 1, 1, 0],
-
     "raised_fingers": 3,
-
     "action": "mute (m)"
 }
 ```

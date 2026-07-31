@@ -9,30 +9,28 @@ This project is beneficial to those with disabilities, those who aren’t close 
 
 ## Features
 
-- Finger gesture recognition
-- Real-time hand tracking using MediaPipe
-- Keyboard automation using pynput
-- FastAPI REST API
+✌️ Finger gesture recognition
+🕦 Real-time hand tracking using MediaPipe
+⌨️ Keyboard automation using pynput
+🖥️ FastAPI REST API
 
 ## API
 
-POST /gesture
+### POST /gesture
 
 Input:
-image file
+
+[.png or .jpg file]
 
 Output:
 {
-  "which_hand": "Left",
-  "finger_statuses": [
-    0,
-    1,
-    1,
-    1,
-    0
-  ],
-  "raised_fingers": 3,
-  "action": "mute (m)"
+    "which_hand": "Left",
+
+    "finger_statuses": [0, 1, 1, 1, 0],
+
+    "raised_fingers": 3,
+
+    "action": "mute (m)"
 }
 
 

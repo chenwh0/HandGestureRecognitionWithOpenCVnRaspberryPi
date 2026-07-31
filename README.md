@@ -10,8 +10,11 @@ This project is beneficial to those with disabilities, those who aren’t close 
 ## Features
 
 ✌️ Finger gesture recognition
+
 🕦 Real-time hand tracking using MediaPipe
+
 ⌨️ Keyboard automation using pynput
+
 🖥️ FastAPI REST API
 
 ## API
@@ -23,7 +26,8 @@ Input:
 [.png or .jpg file]
 
 Output:
-{
+
+```{
     "which_hand": "Left",
 
     "finger_statuses": [0, 1, 1, 1, 0],
@@ -31,6 +35,6 @@ Output:
     "raised_fingers": 3,
 
     "action": "mute (m)"
-}
+}```
 
 

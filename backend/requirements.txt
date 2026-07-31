@@ -1,6 +1,8 @@
-fastapi
+fastapi[standard]
 uvicorn
 opencv-python
-mediapipe
+mediapipe==0.10.21
 numpy
-python-multipart
+pynput
+pydantic
+typing

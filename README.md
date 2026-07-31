@@ -35,5 +35,11 @@ Output:
     "action": "mute (m)"
 }
 ```
+## Testing
+Tests in `tests/` directory and use sample hand gesture images and files to validate the gesture recognition pipeline.
 
+✅ Test with 1-finger up image
 
+✅ Test with fist up image
+
+✅ Test with invalid file

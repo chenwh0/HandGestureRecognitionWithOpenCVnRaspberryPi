@@ -1,6 +1,6 @@
 # Use Hand Gestures to run commands on your computer
 
-# Demo video
+# Demo video (click to play)
 [![image](https://github.com/user-attachments/assets/b44d4aad-9da5-4fe6-b881-7771b8abab48)](https://www.youtube.com/watch?v=UbaJz3TvRb4)
 
 

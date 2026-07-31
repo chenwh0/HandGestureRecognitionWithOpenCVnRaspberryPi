@@ -1,6 +1,6 @@
 import cv2
-from camera import Camera
-from pipeline import GesturePipeline
+from .camera import Camera
+from .pipeline import GesturePipeline
 
 camera = Camera()
 pipeline = GesturePipeline()

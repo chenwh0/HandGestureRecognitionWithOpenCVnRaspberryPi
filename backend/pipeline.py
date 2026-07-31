@@ -1,6 +1,6 @@
-from hand_detector import HandDetector
-from gesture import evaluate_fingers
-from shortcut_keys import run_shortcut
+from .hand_detector import HandDetector
+from .gesture import evaluate_fingers
+from .shortcut_keys import run_shortcut
 
 class GesturePipeline:
     def __init__(self):
@@ -13,6 +13,9 @@ class GesturePipeline:
             "raised_fingers": 0,
             "action": None
         }
+        if frame is None:
+            return results
+        
         landmarks, which_hand = self.detector.detect_landmarks(frame)
         if landmarks:
             results["which_hand"] = which_hand

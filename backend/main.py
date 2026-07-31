@@ -2,8 +2,8 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import cv2
 import numpy as np
-from pipeline import GesturePipeline
-from schema import GestureResponse  
+from .pipeline import GesturePipeline
+from .schemas import GestureResponse  
 
 app = FastAPI()
 

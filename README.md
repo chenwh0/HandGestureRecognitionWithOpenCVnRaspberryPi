@@ -17,6 +17,7 @@ This project is beneficial to those with disabilities, those who aren’t close 
 
 🖥️ FastAPI REST API
 
+
 ## API
 
 ### POST /gesture
@@ -35,11 +36,30 @@ Output:
     "action": "mute (m)"
 }
 ```
+
+
 ## Testing
-Tests in `tests/` directory and use sample hand gesture images and files to validate the gesture recognition pipeline.
+
+1. Run ```pip install -r requirements.txt```
+
+2. Run ```pytest test_pipeline.py```
+
+Tests:
 
 ✅ Test with 1-finger up image
 
 ✅ Test with fist up image
 
 ✅ Test with invalid file
+
+
+
+## UI
+
+1. Click "Detect" button to start...
+> * Capture current webcam frame
+> * Send frame to FastAPI
+> * Get gesture shortcut
+> * Update UI
+2. Click "Stop" button to end. 
+

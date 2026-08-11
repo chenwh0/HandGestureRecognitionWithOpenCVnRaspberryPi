@@ -67,6 +67,7 @@ function Camera() {
             </div>
             <div className="result-container">
                 {result && (<div className="result">
+                    <h3>Last gesture & Shortcut action sent</h3>
                     <p>Hand: {result.which_hand}</p>
                     <p>Fingers raised: {result.finger_statuses}</p>
                     <p>Total raised: {result.raised_fingers}</p>

@@ -1,11 +1,12 @@
 // Renders UI
 import Camera from "./Camera";
+import "./App.css";
 
 function App() {
     return (
         <div class="bg-custom">
             <h1 class="text-white">Hand gesture recognition</h1>
-            <small class="text-white"><em>Gesture with your fingers the numbers 1-5</em></small>
+            <small className="text-white custom-subtitle"><em>Gesture 1–5 fingers to test detection here.</em> Then open to any <a href="https://www.youtube.com/">YouTube</a> video to control it with same gestures.</small>
             <br></br>
             <br></br>
             <Camera />

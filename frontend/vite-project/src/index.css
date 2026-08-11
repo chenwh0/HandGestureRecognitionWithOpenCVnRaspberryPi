@@ -30,21 +30,3 @@ html, body {
 body {
   text-align: center;
 }
-
-h1 {
-  text-shadow: 0 0 32px rgb(255, 158, 89);
-  font-weight: 600;
-  font-family: "Museo Moderno", sans-serif;
-  font-size: 3em;
-  letter-spacing: 5%;
-  margin: 0;
-}
-
-.bg-custom {
-  min-height: 100vh;
-  width: 100%;
-  background-image: url("./assets/yue-ma-Yc6Ik-48C18-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  padding-top: 32px;
-}

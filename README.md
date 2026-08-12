@@ -24,6 +24,8 @@ This project is beneficial to those with disabilities, those who aren’t close 
 
 # Setup
 
+<img width="3297" height="1777" alt="image" src="https://github.com/user-attachments/assets/40178820-3fbe-458f-9601-cfdf1ac68baa" />
+
 ## Backend
 
 1. Download repo then open Terminal from inside root folder. 

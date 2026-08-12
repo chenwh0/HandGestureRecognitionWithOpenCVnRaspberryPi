@@ -102,3 +102,20 @@ Tests:
 ✅ Test with fist up image
 
 ✅ Test with invalid file
+
+# What's happening?
+
+1. webcam live detection
+
+2. hidden canvas captures a frame in video stream
+
+3. frame converted to JPEG blob
+
+4. frame sent to detectGesture() API
+> a. Detect hand and position of joints
+> b. Determine the number of fingers held up
+> c. Control keyboad and press on shortcut keys based on number of fingers raised.
+
+5. return results and runs shortcut(test it out by opening and focusing on any YouTube video or text window)
+
+6. setResult() shows results and ran shortcut in React UI

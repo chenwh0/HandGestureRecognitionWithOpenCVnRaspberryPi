@@ -15,7 +15,12 @@ This project is beneficial to those with disabilities, those who aren’t close 
 
 ⌨️ Keyboard automation using pynput
 
-🖥️ FastAPI REST API
+📸 FastAPI REST API (send images instead of live detection)
+
+🖥️ Responsive React UI for webcam access, gesture detection, and action execution
+
+📋 Automated backend tests using pytest
+
 
 # Setup
 
@@ -37,20 +42,20 @@ This project is beneficial to those with disabilities, those who aren’t close 
 
 3. Run Node Package Manager - `npm run dev`
 
-4. Click on the http://localhost... URL that appears to use the UI.
+4. Click on http://localhost:5173 URL in Terminal window to open the UI.
 
 5. Accept turning on of webcam.
 
-6. Click "Detect" button.
+6. Click "Detect ▶️" button.
 
-6. Open to any youtube video in your browser and start gesturing! 
+7. Open to any [YouTube](https://www.youtube.com/) video in your browser and start gesturing! 
 
-8. Click "Stop" button to end. 
+8. Click "Stop ⏺️" button to end. 
 
 
 # API
 
-## ``` POST /gesture```
+## ```POST /gesture```
 Accepts image and returns action associated with detected gesture.
 
 Input:
@@ -68,7 +73,7 @@ Output:
 }
 ```
 
-## ``` GET /health```
+## ```GET /health```
 
 Check if backend is running.
 

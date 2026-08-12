@@ -17,10 +17,41 @@ This project is beneficial to those with disabilities, those who aren’t close 
 
 🖥️ FastAPI REST API
 
+# Setup
 
-## API
+## Backend
 
-### POST /gesture
+1. Download repo then open Terminal from inside root folder. 
+
+2. Install dependencies - `pip install -r requirements.txt`
+
+3. Start FastAPI server at root folder by entering into the Terminal - `python -m uvicorn backend.main:app --reload`
+
+4. Interactive API at http://localhost:8000/docs
+
+## Frontend
+
+1. Open new Terminal window and go to frontend folder - `cd frontend`
+
+2. Install Node Package Manager - `npm install`
+
+3. Run Node Package Manager - `npm run dev`
+
+4. Click on the http://localhost... URL that appears to use the UI.
+
+5. Accept turning on of webcam.
+
+6. Click "Detect" button.
+
+6. Open to any youtube video in your browser and start gesturing! 
+
+8. Click "Stop" button to end. 
+
+
+# API
+
+## ``` POST /gesture```
+Accepts image and returns action associated with detected gesture.
 
 Input:
 
@@ -37,12 +68,25 @@ Output:
 }
 ```
 
+## ``` GET /health```
 
-## Testing
+Check if backend is running.
 
-1. Run ```pip install -r requirements.txt```
+Output:
 
-2. Run ```pytest test_pipeline.py```
+```
+{
+    "status": "running"
+}
+```
+
+# Testing
+
+1. Travel to root folder
+
+2. Run ```pip install -r requirements.txt```
+
+3. Run ```pytest test_pipeline.py```
 
 Tests:
 
@@ -51,15 +95,3 @@ Tests:
 ✅ Test with fist up image
 
 ✅ Test with invalid file
-
-
-
-## UI
-
-1. Click "Detect" button to start...
-> * Capture current webcam frame
-> * Send frame to FastAPI
-> * Get gesture shortcut
-> * Update UI
-2. Click "Stop" button to end. 
-

@@ -105,7 +105,7 @@ Tests:
 
 # What's happening?
 
-1. webcam live detection
+1. Allow webcam to turn on
 
 2. hidden canvas captures a frame in video stream
 
